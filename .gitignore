@@ -1,2 +1,3 @@
 #Extra Stuff we do not need
 /boot/
+/app/__pycache/
