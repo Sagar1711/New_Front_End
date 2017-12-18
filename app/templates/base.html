@@ -16,7 +16,7 @@
 
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="../statics/style/base.css">
+    <link rel="stylesheet" href="../static/style/base.css">
 </head>
 <body>
     <div id="wrapper">
@@ -75,36 +75,9 @@
             </nav>
         </div>
         <!-- Page content -->
-        <div id="page-content-wrapper">
-            <div class="page-content">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="panel panel-danger">
-                                <div class="panel-heading">
-                                        Panel 1
-                                </div>
-                                <div class="panel-body">
-                                    content body
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">                    
-                            <div class="panel panel-success">
-                                <div class="panel-heading">
-                                        Panel 1
-                                </div>
-                                <div class="panel-body">
-                                    content body
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-        </div>
+        {% block content %}
+        {% endblock %}
     </div>
-    <script src="../statics/JS/base.js"></script>
+    <script src="../static/JS/base.js"></script>
 </body>
 </html>
